@@ -1,6 +1,6 @@
 //------------------------------------------- Service Worker -------------------------------------------
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/Dibijoux/sw.js', { scope: '/Dibijoux/' }).then(function(reg) {
+    navigator.serviceWorker.register('/Dibijoux/sw.js', { scope: '/Dibijoux' }).then(function(reg) {
 
         if(reg.installing) {
             console.log('Service worker installing');
