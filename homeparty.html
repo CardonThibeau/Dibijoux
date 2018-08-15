@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Thibeau Cardon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di-bijoux</title>
+
+    <link rel="manifest" href="assets/manifest/manifest.json">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Menu</label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Our Collection</a></li>
+                <li><a href="work.html">Work for us</a></li>
+                <li><a href="homeparty.html">Homeparty</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div id="wrapper">
+    <section>
+        <h2>Homeparty</h2>
+        <p>
+            After having made a reservation, it will be up to you to organize the evening.
+            You may decorate the room as you desire, invite any guests you wish and are free to offer them drinks or
+            bites. The host will receive a compensation in store-credit or gifts.
+        </p>
+    </section>
+
+    <article>
+        <h3>Book a Homeparty</h3>
+        <form id="reservation" action="mailto:thibeau.cardon@gmail.com" method="post" enctype="text/plain">
+            <fieldset id="fpersonal">
+                <legend>About you</legend>
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" id="firstname" placeholder="Jane" autofocus required>
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+            </fieldset>
+            <fieldset id="flocation">
+                <legend>Location</legend>
+                <label for="postal">Postal code: </label>
+                <input type="number" name="postal" id="postal" placeholder="9000" required>
+                <label for="town">Town: </label>
+                <input type="text" name="town" id="town" placeholder="Gent" required>
+                <label for="street">Street: </label>
+                <input type="text" name="street" id="street" placeholder="Stationstraat" required>
+                <label for="streetnumber">Number: </label>
+                <input type="text" name="streetnumber" id="streetnumber" placeholder="7" required>
+            </fieldset>
+            <fieldset id="fcontact">
+                <legend>Contact info</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="+32 412 34 56 78">
+            </fieldset>
+            <fieldset id="freservation">
+                <legend>About the reservation</legend>
+                <label for="reservationdate">Date: </label>
+                <input type="date" name="reservationdate" id="reservationdate" value="2019-01-01" required>
+                <label for="startingtime">Starting time: </label>
+                <input type="time" name="startingtime" id="startingtime" value="18:00" required>
+                <label for="targetaudience">Target audience: </label>
+                <select name="targetaudience" id="targetaudience">
+                    <option name="targetwomen" id="all" selected>All</option>
+                    <option name="targetwomen" id="targetwomen">Women</option>
+                    <option name="targetmen" id="targetmen">Men</option>
+                    <option name="targetchildren" id="targetchildren">Children</option>
+                </select>
+                <label for="numberguests">Expected # of guests: </label>
+                <input type="number" name="numberguests" id="numberguests" min="1" max="100" value="10">
+            </fieldset>
+            <input type="submit" value="Make reservation">
+        </form>
+    </article>
+
+    <article id="FAQs">
+        <h3>Homeparty FAQ</h3>
+        <div class="faq">
+            <p class="question" name="how">How does a homeparty play out?</p>
+            <p class="answer" name="how">
+                The employee of your choice will begin with a short demonstration of our collection.
+                Afterwards everyone can rest their eyes/try on jewelry in the warm and welcoming atmosphere of your
+                living
+                room.
+                You can bring the bought jewelry home immediately after purchase. You will also receive a receipt which
+                will
+                function as your warranty.
+            </p>
+        </div>
+
+        <div class="faq">
+            <p class="question" name="card">Is it possible to pay with Mastercard?</p>
+            <p class="answer" name="card">
+                Yes, we accept Mastercard, Visa and PayPal
+            </p>
+        </div>
+
+        <div class="faq">
+            <p class="question" name="appointment">How can I make an appointment?</p>
+            <p class="answer" name="appointment">
+                You can make a reservation by phone: 055/31 22 16 - 0477/94 24 93.
+                <br>
+                You can make a reservation by filling in <a href="#reservation">the form </a>above.
+            </p>
+        </div>
+    </article>
+</div>
+
+<footer>
+    2018 - Made by Student TI : Thibeau Cardon for exam mobile web apps || Not for commercial use
+</footer>
+<script src="assets/js/minjq.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

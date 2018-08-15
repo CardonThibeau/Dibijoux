@@ -1,0 +1,257 @@
+/*--------------------------  DESKTOP  --------------------------*/
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+footer {
+    font-size: 0.8rem;
+    width: 100%;
+    height: auto;
+    font-style: italic;
+    padding: 2px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+#wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#hotproducts {
+    width: 100%;
+}
+
+#hotproducts img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#littlehotproducts {
+    width: 100%;
+}
+
+#littlehotproducts img {
+    width: 10%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.demo {
+    cursor: pointer;
+}
+
+#shopproducts figure{
+    width: 20%;
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#shopproducts figure figcaption{
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#shopproducts figure img{
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.noAhrefstyle{
+    text-decoration: none;
+    color:black;
+}
+/*---------------------  Homeparty  ---------------------*/
+
+#reservation input, #reservation label, #reservation select {
+    display: block;
+    width: 100%;
+}
+
+#reservation legend {
+    font-weight: bolder;
+}
+
+#reservation label {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#reservation input[type="submit"] {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.answer {
+    display: none;
+    margin-left: 2%;
+    font-style: italic;
+}
+
+/*---------------------  Collection  ---------------------*/
+
+.categorie {
+    width: 80%;
+    height: 75px;
+    background-color: lightpink;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+#categorieen a:nth-child(even) {
+    text-align: right;
+}
+
+#categorieen a {
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem;
+    color: whitesmoke;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 3px 3px 7px #000;
+}
+
+#bracelets {
+    background: url(../images/braceletBanner.jpg) no-repeat 100% 30%;
+    background-size: cover;
+}
+
+#necklaces {
+    background: url(../images/necklaceBanner.jpg) no-repeat 100% 80%;
+    background-size: cover;
+}
+
+#rings {
+    background: url(../images/ringBanner.jpg) no-repeat 100% 20%;
+    background-size: cover;
+}
+
+#earrings {
+    background: url(../images/earringBanner.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+#watches {
+    background: url(../images/watchesBanner.jpg) no-repeat 100% 5%;
+    background-size: cover;
+}
+
+/*---------------------  MENU  ---------------------*/
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapsible-menu {
+    font-family: 'Oswald', sans-serif;
+    background: url(../images/Dibijoux_logo.png) no-repeat 50% 0;
+    background-size: 10%;
+    padding: 1%;
+}
+
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.collapsible-menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.collapsible-menu label {
+    font-size: 4rem;
+    display: block;
+    cursor: pointer;
+    background: url(../images/menu.svg) no-repeat left;
+    background-size: 3%;
+    padding: 5px 0 5px 70px;
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked + label {
+    background-image: url(../images/close.svg);
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+#logo {
+    height: 5px;
+    width: 5px;
+}
+
+/*--------------------------  MOBILE  --------------------------*/
+
+@media only screen and (max-width: 800px) {
+    .collapsible-menu label {
+        background-size: 10%;
+        padding: 10px 0 10px 50px;
+    }
+
+    .collapsible-menu {
+        font-family: 'Oswald', sans-serif;
+        background: url(../images/Dibijoux_logo.png) no-repeat 80% 0;
+        background-size: 25%;
+        padding: 1%;
+    }
+
+    .collapsible-menu label {
+        font-size: 3rem;
+    }
+
+    .categorie {
+        width: 100%;
+    }
+
+    #categorieen a {
+        font-size: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #reservation input[type="submit"] {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    #hotproducts img{
+        width: 80%;
+    }
+
+    #littlehotproducts img {
+        width: 25%;
+    }
+
+    #shopproducts figure{
+        width: auto;
+    }
+}
+
+/*--------------------------  MOBILE  --------------------------*/
